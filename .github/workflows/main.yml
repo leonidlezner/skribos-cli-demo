@@ -10,18 +10,6 @@ jobs:
     - name: Show info
       run: |
         echo ${GITHUB_REF:11}
-        echo ${GITHUB_REF}
-        echo ${GITHUB_REF:10}
-        echo ${GITHUB_REF:9}
-        echo ${GITHUB_REF:8}
-        echo ${GITHUB_REF:7}
-        echo ${GITHUB_REF:6}
-        echo ${GITHUB_REF:5}
-        echo ${GITHUB_REF:4}
-        echo ${GITHUB_REF:3}
-        echo ${GITHUB_REF:2}
-        echo ${GITHUB_REF:1}
-        echo ${GITHUB_REF:0}
     - uses: actions/upload-artifact@v1
       with:
         name: my-artifact
