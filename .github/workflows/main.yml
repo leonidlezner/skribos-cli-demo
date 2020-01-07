@@ -7,10 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Create local changes
+    - name: Show info
       run: |
-        echo "Hello, World!"
-        echo ${{ github.head_ref }}
+        echo ${GITHUB_REF:11}
     - uses: actions/upload-artifact@v1
       with:
         name: my-artifact
