@@ -7,10 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Show info
-      run: |
-        echo ${GITHUB_REF:11}
-    - uses: actions/upload-artifact@v1
+    - name: Run skribos
+      uses: leonidlezner/skribos-action@master
       with:
-        name: my-artifact
-        path: src/
+        output: 'dist'
+    - name: Deploy to gh-pages
+      uses: crazy-max/ghaction-github-pages@v1
+      with:
+        target_branch: gh-pages
+        build_dir: dist
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
