@@ -9,6 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Create local changes
       run: |
+        mkdir -p dist
         cp src/*.md dist/
     - name: Commit files
       run: |
