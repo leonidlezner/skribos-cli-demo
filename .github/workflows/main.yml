@@ -10,3 +10,5 @@ jobs:
     - name: Create local changes
       run: |
         echo "Hello, World!"
+        echo ${{ github.head_ref }}
+
