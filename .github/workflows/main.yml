@@ -11,3 +11,4 @@ jobs:
       uses: leonidlezner/skribos-action@master
       with:
         gh_pat: ${{ secrets.GITHUB_PAT }}
+        build_dir: 'dist'
