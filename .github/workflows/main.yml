@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Run Skribos
+    - name: Run skribos
       uses: leonidlezner/skribos-action@master
       with:
         output: 'dist'
