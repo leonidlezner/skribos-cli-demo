@@ -15,4 +15,4 @@ jobs:
       with:
         who-to-greet: 'Max'
       env:
-        REF: ${GITHUB_REF:11}
+        REF: ${{GITHUB_REF:11}}
