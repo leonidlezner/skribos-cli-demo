@@ -10,11 +10,9 @@ jobs:
     - name: Show info
       run: |
         echo ${GITHUB_REF:11}
-    - name: My Action
+    - name: Run Skribos
       uses: leonidlezner/skribos-action@master
       with:
         who-to-greet: 'Max'
-    #- uses: actions/upload-artifact@v1
-    #  with:
-    #    name: my-artifact
-    #    path: src/
+      env:
+        REF: ${GITHUB_REF:11}
