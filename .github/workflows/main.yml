@@ -14,5 +14,5 @@ jobs:
       uses: leonidlezner/skribos-action@master
       with:
         who-to-greet: 'Max'
-      env:
-        REF: ${{ GITHUB_REF:11 }}
+      #env:
+      #  REF: ${{ GITHUB_REF:11 }}
