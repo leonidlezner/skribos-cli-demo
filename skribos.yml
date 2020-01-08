@@ -1,0 +1,12 @@
+downloads:
+  - lernos/lernos-common
+    to: ext-chapters
+  - lernos/lernos-media
+    to: media/lernos-media
+
+chapters:
+  - ext-chapters/lernos-common/cover.md
+  - book/katas.md
+  - book/kata1.md
+  - book/kata2.md
+  - ext-chapters/lernos-common/back.md
