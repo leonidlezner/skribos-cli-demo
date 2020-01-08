@@ -1,7 +1,7 @@
 downloads:
-  - lernos/lernos-common
+  - github: lernos/lernos-common
     to: ext-chapters
-  - lernos/lernos-media
+  - github: lernos/lernos-media
     to: media/lernos-media
 
 chapters:
