@@ -1,3 +1,3 @@
 # skribos-cli-demo
 
-## Demo repo
+## Demo Repo
