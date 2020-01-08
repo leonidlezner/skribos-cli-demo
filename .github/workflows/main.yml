@@ -1,4 +1,4 @@
-name: CI
+name: Run Skribos
 
 on: [push]
 
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Run skribos
+    - name: Run Skribos
       uses: leonidlezner/skribos-action@master
       with:
         build_dir: 'dist'
