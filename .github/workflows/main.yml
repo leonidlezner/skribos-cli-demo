@@ -11,6 +11,7 @@ jobs:
       uses: leonidlezner/skribos-action@master
       with:
         build_dir: 'dist'
+        book: 'book.yaml'
     - name: Deploy to Github Pages
       uses: crazy-max/ghaction-github-pages@v1
       with:
