@@ -10,5 +10,12 @@ jobs:
     - name: Run skribos
       uses: leonidlezner/skribos-action@master
       with:
-        gh_pat: ${{ secrets.GITHUB_PAT }}
         build_dir: 'dist'
+    - name: Deploy to Github Pages
+      uses: crazy-max/ghaction-github-pages@v1
+      with:
+        target_branch: gh-pages
+        build_dir: dist
+        keep_history: true
+      env:
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
