@@ -30,4 +30,4 @@ build:
     - name: "Convert DOCX"
       command: pandoc $files -o $output/$base.docx --from markdown --number-sections -V lang=$language
     - name: "Convert HTML"
-      command: pandoc $files -o $output/$base.html --from markdown --number-sections -V lang=$language
+      command: pandoc $files -o $output/index.html --from markdown --number-sections -V lang=$language
