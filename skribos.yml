@@ -18,7 +18,7 @@ chapters:
 
 build:
   vars:
-    output: dist
+    output: xyz
     base: skribos-cli-demo
     language: de-de
 
