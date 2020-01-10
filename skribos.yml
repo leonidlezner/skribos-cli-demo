@@ -1,8 +1,10 @@
 downloads:
-  - github: lernos/lernos-common
-    to: ext-chapters
-  - github: lernos/lernos-media
-    to: media/lernos-media
+  - github: leonidlezner/skribos-cli-demo-common
+    to: external
+  - github: leonidlezner/skribos-cli-demo-media
+    to: external
+  - github: leonidlezner/skribos-cli-demo-license
+    to: external
 
 chapters:
   - ext-chapters/lernos-common/cover.md
