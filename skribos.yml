@@ -10,10 +10,10 @@ downloads:
     override: true
 
 chapters:
+  - src/metadata.yaml
   - external/skribos-cli-demo-common/cover.md
   - external/skribos-cli-demo-license/license.md
-  - book/katas.md
-  - book/kata1.md
+  - src/lernOS-for-You-Guide-de.md
   - external/skribos-cli-demo-common/back.md
 
 build:
