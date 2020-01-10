@@ -1,15 +1,33 @@
 downloads:
   - github: leonidlezner/skribos-cli-demo-common
     to: external
+    override: true
   - github: leonidlezner/skribos-cli-demo-media
     to: external
+    override: true
   - github: leonidlezner/skribos-cli-demo-license
     to: external
+    override: true
 
 chapters:
-  - ext-chapters/lernos-common/cover.md
+  - external/skribos-cli-demo-common/cover.md
+  - external/skribos-cli-demo-license/license.md
   - book/katas.md
   - book/kata1.md
-  - book/kata2.md
-  - book/kata3.md
-  - ext-chapters/lernos-common/back.md
+  - external/skribos-cli-demo-common/back.md
+
+build:
+  vars:
+    output: dist
+    base: skribos-cli-demo
+    language: de-de
+
+  jobs:
+    - name: "Create output directory"
+      command: mkdir -p $output
+    - name: "Convert PDF"
+      command: pandoc $files -o $output/$base.pdf --from markdown --number-sections -V lang=$language
+    - name: "Convert DOCX"
+      command: pandoc $files -o $output/$base.docx --from markdown --number-sections -V lang=$language
+    - name: "Convert HTML"
+      command: pandoc $files -o $output/$base.html --from markdown --number-sections -V lang=$language
